@@ -41,7 +41,7 @@ func main()  {
 		s += sep + arg
 		sep = " "
 	}
-    // for range 效率 比 for 低 因为 for range 是值复制  for 是 索引
+    // for range 效率 比 for 低 因为 for range 是元素的拷贝  for 是 索引
 	c := time.Now().UnixNano()
 
 	//版本 3
