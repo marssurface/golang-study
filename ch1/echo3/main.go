@@ -20,10 +20,10 @@ func main()  {
 	//s := time.Now()
 	//fmt.Println(s.UnixNano())
 
-	var arr [100000]string
+	var arr [10000]string
 
 	str := "fffdfsafsadfasfasfd"
-	for j := 0; j < 100000; j++ {
+	for j := 0; j < 10000; j++ {
 		arr[j] = str
 	}
 
@@ -41,9 +41,7 @@ func main()  {
 		s += sep + arg
 		sep = " "
 	}
-
-
-
+    // for range 效率 比 for 低 因为 for range 是值复制  for 是 索引
 	c := time.Now().UnixNano()
 
 	//版本 3
