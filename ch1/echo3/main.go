@@ -5,7 +5,6 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"strings"
 	"time"
 )
@@ -45,9 +44,10 @@ func main()  {
 	c := time.Now().UnixNano()
 
 	//版本 3
-	s =  strings.Join(os.Args[0:], " ")
+	s =  strings.Join(arr[:], " ")
 
 	d := time.Now().UnixNano()
+	// strings.Join 效率 奇快
 
 	fmt.Println(b - a)
 	fmt.Println(c - b)
